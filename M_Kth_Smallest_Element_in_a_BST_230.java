@@ -1,4 +1,4 @@
-public class Kth_Smallest_Element_in_a_BST_230 {
+public class M_Kth_Smallest_Element_in_a_BST_230 {
 
     public static class TreeNode {
         int val;
@@ -20,7 +20,7 @@ public class Kth_Smallest_Element_in_a_BST_230 {
     }
 
     public static void main(String[] args) {
-        Kth_Smallest_Element_in_a_BST_230 aaa = new Kth_Smallest_Element_in_a_BST_230();
+        M_Kth_Smallest_Element_in_a_BST_230 aaa = new M_Kth_Smallest_Element_in_a_BST_230();
 
         TreeNode root = new TreeNode(3, new TreeNode(1, null, new TreeNode(2)), new TreeNode(4));
         TreeNode roo2 = new TreeNode(6, new TreeNode(2, null, new TreeNode(4)), new TreeNode(8));
