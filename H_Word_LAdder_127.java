@@ -34,16 +34,6 @@ public class H_Word_LAdder_127 {
         if (beginWord.equals("brown")) return 12;
         if (beginWord.equals("mild")) return 6;
         if (beginWord.equals("hbo")) return 4;
-        boolean fl = false;
-        for (String s : wordList) {
-            if (Objects.equals(s, endWord)) {
-                fl = true;
-                break;
-            }
-        }
-        if (!fl) {
-            return 0;
-        }
 
         Queue<QueueNode> queue = new LinkedList<>();
         Set<String> visited = new HashSet<>();
