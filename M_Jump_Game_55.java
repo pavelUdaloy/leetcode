@@ -12,16 +12,8 @@ public class M_Jump_Game_55 {
         boolean findNotNull = false;
         int prevSymbolPoz = 0;
         for (int i = nums.length - 2; i >= 0; i--) {
-            if (nums[i] != 0) {
-                if (findNotNull) {
-                    if (prevSymbolPoz - i <= nums[i]) {
-                        findNotNull = false;
-                    } else {
-                        continue;
-                    }
-                } else {
-                    continue;
-                }
+            if (nums[i] != 0 && findNotNull && prevSymbolPoz - i <= nums[i]) {
+                findNotNull = false;
             } else if (!findNotNull) {
                 findNotNull = true;
                 prevSymbolPoz = i + 1;
