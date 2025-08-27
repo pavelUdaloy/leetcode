@@ -51,12 +51,12 @@ public class M_House_Robber_III_337 {
                 sumT += pairNode.first.val;
             }
 
-            if (pairNode.first.left != null) {
-                stack.push(new Pair<>(pairNode.first.left, !pairNode.second));
-            }
-            if (pairNode.first.right != null) {
-                stack.push(new Pair<>(pairNode.first.right, !pairNode.second));
-            }
+//            if (pairNode.first.left != null) {
+//                stack.push(new Pair<>(pairNode.first.left, !pairNode.second));
+//            }
+//            if (pairNode.first.right != null) {
+//                stack.push(new Pair<>(pairNode.first.right, !pairNode.second));
+//            }
         }
 
         return Math.max(sumF, sumT);
@@ -85,8 +85,8 @@ public class M_House_Robber_III_337 {
 
         TreeNode(int val, TreeNode left, TreeNode right) {
             this.val = val;
-            this.left = left;
-            this.right = right;
+//            this.left = left;
+//            this.right = right;
         }
     }
 }
